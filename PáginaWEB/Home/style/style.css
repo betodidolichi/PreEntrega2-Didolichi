@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 
+        "header header header" 115px
+        "main main main" auto
+        "footer footer footer" 80px /
+        1fr     1fr    1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: #f2eadf;
+}
+
+main {
+    grid-area: main;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #dad0c7;
+}
+
+.nav-item {
+    display: none;
+} 
+
+/*<!--Band contact-->*/
+
+.bandcontact2 {
+    display: none;
+}
+
+.bandcontact {
+    background-color: #595048;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+.bandcontact__relleno {
+    width: 1000px;
+}
+
+.bandcontact__p {
+    margin-top: 19px
+}
+.bandcontact__email {
+    display: flex;
+    align-items: center;
+}
+
+.bandcontact__email p {
+    margin-top: 19px
+}
+
+.bandcontact__phone {
+    display: flex;
+    align-items: center;
+}
+
+.bandcontact__phone p {
+    margin-top: 19px
+}
+
+.bandcontact__email img {
+    height: 10px;
+    padding-right: 3px;
+}
+
+.bandcontact__phone img {
+    height: 12px;
+    padding-right: 3px;
+}
+
+/*<!--Nav fixed-->*/
+.navfixed {
+    background-color: #f2eadf;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.navfixed__imglogo {
+    height: 50px;
+}
+
+.navfixed__imglogin {
+    height: 30px;
+}
+
+.navfixed__options {
+    display: flex;
+    list-style-type: none;
+    padding-right: 150px;
+}
+
+.navfixed__options li {
+    margin: 0 33px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    margin-top: 19px
+}
+
+.navfixed__options li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar bg-body-tertiary {
+    display: none;
+}
+
+/*<!--Main Body-->*/
+main {
+    display: grid;
+    grid-template: 
+    "mainbody mainvideo" auto /
+    2fr auto;
+    align-items: center;
+}
+
+.mainbody {
+    padding-left: 60px;
+    font-family: 'Epilogue', sans-serif;
+    color: white;
+}
+
+.mainbody h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.mainbody p {
+    font-size: 34px;
+    font-weight: 100;
+    margin-top: -8px;
+}
+
+.mainbody button {
+    padding: 10px 40px;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: #8c837b;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.mainbody button:hover {
+    box-shadow: 0 0 15px #f2eadf;
+    scale: 1.01;
+}
+
+.mainbody button a{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+}
+
+.mainvideo{
+    padding-right: 60px;
+} 
+
+.mainvideo iframe {
+    border-radius: 15px 0 15px 0;
+    transition: all 0.3s;
+}
+
+.mainvideo iframe:hover {
+    box-shadow: 0 0 5px #f2eadf;
+    scale: 1.01;
+}
+
+/*Register List*/
+
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    background-color: #f2eadf;
+    width: 700px;
+    height: 600px;
+    margin:auto;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px black;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.register_creatucuenta {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.register_creatucuenta-p {
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 5px;
+}
+
+.register_h3 {
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.register_input {
+    background-color: transparent;
+    border: 1px solid #949494;
+    height: 40px;
+}
+
+.register_button {
+    background-color: #595048;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    width: 150px;
+    height: 40px;
+    margin-top: 42px;
+    margin-left: 498px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.register_button:hover {
+    box-shadow: 0 0 5px #8c837b;
+    scale: 1.01;
+}
+
+@media (max-width: 360px) {
+
+    .grid-container {
+        display: grid;
+        grid-template: 
+            "header header header" 45px
+            "main main main" auto
+            "footer footer footer" 0px /
+            1fr     1fr    1fr;
+    }
+
+    .bandcontact {
+        display: none;
+    }
+
+    /*Band contact 2*/
+    .bandcontact2 {
+        background-color: #595048;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        color: white;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 10px;
+        font-weight: 200;
+    }
+    
+    .bandcontact2__email {
+        display: none;
+        align-items: center;
+    }
+    
+    .bandcontact2__phone {
+        display: flex;
+        align-items: center;
+    }
+
+    .bandcontact2__phone p {
+        margin-top: 19px
+    }
+    
+    .bandcontact2__email img {
+        height: 10px;
+        padding-right: 3px;
+    }
+    
+    .bandcontact2__phone img {
+        height: 12px;
+        padding-right: 3px;
+    }
+
+    /*<!--Nav fixed-->*/
+    .navfixed {
+        background-color: #f2eadf;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .navfixed__imglogo {
+        height: 25px;
+    }
+    
+    .navfixed__imglogin {
+        display: none;
+        height: 30px;
+    }
+    
+    .navfixed__options {
+        display: flex;
+        list-style-type: none;
+        padding-right: 150px;
+    }
+    
+    .navfixed__options li {
+        display: none;
+        margin: 0 33px;
+        font-family: 'Epilogue', sans-serif;
+        font-weight: 400;
+    }
+    
+    .navfixed__options li a {
+        text-decoration: none;
+        color: black;
+    }
+
+        /*<!--Main Body-->*/
+    main {
+        display: grid;
+        grid-template: 
+        "mainbody" auto 
+        "mainvideo" auto/
+        1fr;
+        align-items: center;
+    }
+
+    .mainbody {
+        padding-left: 10px;
+        font-family: 'Epilogue', sans-serif;
+        color: white;
+    }
+
+    .mainbody h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 15px;
+    }
+
+    .mainbody p {
+        font-size: 12px;
+        font-weight: 100;
+        margin-top: -8px;
+        margin-left: 28px;
+    }
+
+    .mainbody button {
+        padding: 10px 40px;
+        margin-top: 10px;
+        margin-left: 85px;
+        font-size: 11px;
+        background-color: #8c837b;
+        border-radius: 15px;
+        border: none;
+        transition: all 0.3s;
+    }
+
+    .mainbody button:hover {
+        box-shadow: 0 0 15px #f2eadf;
+        scale: 1.01;
+    }
+
+    .mainbody button a{
+        font-family: 'Epilogue', sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        color: white;
+    }
+
+    .mainvideo{
+        display: none;
+    } 
+    
+    /*Register List*/
+    .register {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px;
+        background-color: #f2eadf;
+        width: 100%;
+        height: 500px;
+        margin:auto;
+        border: 1px solid white;
+        box-shadow: 1px 1px 1px black;
+        font-family: 'Epilogue', sans-serif;
+    }
+    
+    .register_creatucuenta {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .register_creatucuenta-p {
+        font-size: 12px;
+        font-weight: 200;
+        padding-top: 5px;
+    }
+    
+    .register_h3 {
+        font-size: 12px;
+        font-weight: 500;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .register_input {
+        background-color: transparent;
+        border: 1px solid #949494;
+        height: 40px;
+    }
+    
+    .register_button {
+        background-color: #595048;
+        color: white;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+        width: 100%;
+        margin-top: 42px;
+        margin-left: 0px;
+        border: none;
+        transition: all 0.3s;
+    }
+    
+    .register_button:hover {
+        box-shadow: 0 0 5px #8c837b;
+        scale: 1.01;
+    }
+
+    /*Bootstrap*/
+    .nav-item {
+        display: flex;
+        margin-right: 10px;
+    }
+}
